@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+/* NAVIGATION SECTION STYLE  */
+
+#navigation {
+    /* border: 2px solid red; */
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* NINJA TECHNIQUE  */
+
+#navigation::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navigation #logo {
+    margin: 11px;
+}
+
+#navigation #logo img {
+    height: 58px;
+    width: 60px;
+}
+
+#items-list {
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    margin-left: 33px;
+}
+
+#items-list li {
+    list-style: none;
+    margin: 0px 22px;
+}
+
+#items-list li a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: black;
+    padding: 5px 7px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    /* transition: all 3s ease-out; */
+
+    /* USED LINEAR GRADIENT FOR CREATING ANIMATION    */
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+#items-list li a:hover {
+    /* TRANSITOIN PART  */
+    background-position: left bottom;
+    color: white;
+    /* text-decoration: underline; */
+
+}
+
+#navigation #brand {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 1.2rem;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+}
+
+/* HOME SECTION STYLE  */
+
+#home {
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 882px;
+}
+
+/* NINJA TECHNIQUE  */
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('/Img/Cover/2.jpg')no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 9px 10px;
+}
+
+#home #order {
+    margin-top: 86px;
+}
+
+/* SERVICES SECTION  */
+
+
+#services_container {
+    border-top: 2px solid black;
+    height: 971px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+}
+
+/* NINJA TECHNIQUE  */
+
+#services_container::before {
+    content: "";
+    background: url('/Img/Cover/1.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#services {
+    /* border: 2px solid rgb(218, 26, 176); */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#services .box {
+    border: 2px solid white;
+    border-radius: 13px;
+    width: 263px;
+    margin: 15px 12px;
+    padding: 11px 4px;
+}
+
+.box img {
+    display: block;
+    height: 176px;
+    width: 197px;
+    width: 178px;
+    margin: 11px auto;
+}
+
+.box p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+
+/* CLIENT SECTION  */
+
+#client-container {
+    border-top: 2px solid black;
+    height: 660px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* NINJA TECHNIQUE */
+
+#client-container::before {
+    content: "";
+    background: url("/Img/Cover/3.jpg")no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+#client {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 33px;
+}
+
+.Our_clients {
+    /* border: 2px solid red; */
+    margin: 11px 10px;
+}
+
+.Our_clients img {
+    height: 200px;
+    width: 200px;
+}
+
+
+/* CONTACT-US SECTION  */
+
+
+#contact-us {
+    border-top: 2px solid black;
+    height: 565px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* NINJA TECHNIQUE  */
+
+#contact-us::before {
+    content: "";
+    background: url("/Img/contactus/2.webp")no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#contact-us form {
+    /* border: 2px solid black; */
+    width: 45%;
+    margin: auto;
+    margin-top: 67px;
+}
+
+.inputItems label {
+    font-size: 1.3rem;
+    font-weight: bold
+}
+
+.inputItems input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 6px 6px;
+    margin: 5px 0px;
+    border: 2px solid brown;
+    border-radius: 11px;
+    background-color: transparent;
+}
+
+form #fOrder {
+    width: 37%;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+}
+
+/* FOOTER SECTOIN  */
+
+footer {
+    background-color: rgb(2, 2, 56);
+    font-family: 'Playfair Display', serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+}
+
+#fIcon{
+    position: absolute;
+    right: 0px;
+}
+#fIcon a{
+    padding: 0px 5px;
+    text-decoration: none;
+    color: white;
+}
+
+/* UTILITY SECTION  */
+
+/* UNDERLINE ANIMATIOIN */
+
+.h-primary {
+    font-size: 2.4rem;
+    margin: 23px;
+    text-align: center;
+    /* text-decoration: underline; */
+    /* Creating Underline Animation  */
+
+    display: inline-block;
+    position: relative;
+}
+
+.h-primary::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom left;
+    transition: transform 0.45s ease-out;
+}
+
+.h-primary:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.h-secondary {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2px 4px;
+    margin-bottom: 9px;
+}
+
+.btn {
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: #b95656;
+    color: white;
+    padding: 6px 9px;
+    border: 2px solid #725d5d;
+    border-radius: 13px;
+    transition: all 0.49s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgb(230, 87, 87);
+    color: black;
+}
